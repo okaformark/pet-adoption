@@ -223,9 +223,11 @@ const petBuilder =(variable)=>{
         domString +=    `</header>`;
         domString +=    `<img src = "${pet.imageUrl}">`;
         domString +=    `<h2>${pet.color}</h2>`;
-        domString +=    `<p>${pet.specialSkill}</p>`;
-        domString +=    `<footer class = "footer">`;
-        domString +=      `<h2 class = "">${pet.type}</h2>`;
+        domString +=    `<div class ="special-skills">`;
+        domString +=      `<p>${pet.specialSkill}</p>`;
+        domString +=    `</div>`;
+        domString +=    `<footer>`;
+        domString +=      `<div class = "${pet.type}">${pet.type}</div>`;
         domString +=    `</footer>`;
         domString += `</div>`;
     });
