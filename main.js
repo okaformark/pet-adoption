@@ -218,8 +218,8 @@ const petBuilder =(variable)=>{
     let domString = '';
     variable.forEach((pet) => {
         domString += `<div class = "pet-card">`;
-        domString +=    `<header class = "header">`;
-        domString +=      `<h1 class = "pet-name">${pet.name}</h1>`;
+        domString +=    `<header>`;
+        domString +=      `<p class = "pet-name">${pet.name}</p>`;
         domString +=    `</header>`;
         domString +=    `<img src = "${pet.imageUrl}">`;
         domString +=    `<h2>${pet.color}</h2>`;
